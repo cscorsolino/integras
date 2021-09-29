@@ -41,11 +41,11 @@ testimonials:
       <div class='mod modBarGraph'>
         <ul class='bars'>
           {% for skill in page.skills %}
-            <li>
-              <h4 style=''>
+            <li> <!--
+              <h4 style='highlighted'>
                 {{skill.title}}
                 <strong>{{skill.percentage}}%</strong>
-              </h4>
+              </h4> -->
               <p class='highlighted' data-percent='{{skill.percentage}}'></p>
             </li>
           {% endfor %}
@@ -87,15 +87,15 @@ testimonials:
   </div>
 </div>
 
-
-<div class='full parallax' style='background: #f5f5f5'>
+<!--
+<div class='full parallax' style='background: #f2f2f2'>
   <div class='row'>
     <div class='large-12 columns'>
       <p class='centered-text'>
         <i class='fa fa-quote-left' style='color: #00ddda; font-size: 36px;'></i>
       </p>
     </div>
-  </div>
+  </div>-->
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="What our clients say" %}
@@ -124,4 +124,5 @@ testimonials:
   </div>
 </div>
 
-{% include our-customers.html %}
+
+
